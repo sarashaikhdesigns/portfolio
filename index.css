@@ -31,7 +31,7 @@ body
 }
 
 .top-links:hover a {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
@@ -62,12 +62,12 @@ body
   display: none;
   position: fixed;
   background-color: #191716;
-  top: 60px; /* Adjusted the top position to leave space for the text */
+  top: 60px; 
   right: 0;
   padding: 15px;
   flex-direction: column;
   z-index: 3;
-  text-align: right; /* Align the text to the right */
+  text-align: right; 
 
 }
 
@@ -81,7 +81,7 @@ body
 
 
 .menu a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 /* about, resume */
@@ -103,7 +103,7 @@ body
 }
 
 .bottom-nav a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
@@ -130,7 +130,7 @@ body
 /* banner */
 
 .banner {
-  position: relative; /* Set the positioning context for absolute positioning */
+  position: relative; 
 
 }
 
@@ -141,9 +141,9 @@ body
   position: absolute;
   top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the text precisely */
+  transform: translate(-50%, -50%);
   z-index: 2;
-  white-space: nowrap; /* Ensure the text stays on one line */
+  white-space: nowrap;
 }
 
 .banner p {
@@ -160,11 +160,11 @@ body
 
 .banner .photo img {
   margin-top: 5%;
-  width: 80%; /* Set the width of the image */
-  display: block; /* Make the image a block element to center it */
-  margin-left: auto; /* Center the image horizontally */
-  margin-right: auto; /* Center the image horizontally */
-  z-index: 1; /* Ensure the image is below the text */
+  width: 80%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 1; 
 }
 
 
@@ -180,7 +180,7 @@ body
 
 .description p {
   font-family: "area-normal", sans-serif;
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 18px; 
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -196,7 +196,7 @@ body
 .photo-guide {
   width: 90%;
   margin-top: 5%;
-  margin-bottom: 10%; /* Adjust the bottom margin as needed */
+  margin-bottom: 10%; 
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -215,10 +215,10 @@ body
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust the minmax values as needed */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
   gap: 10px;
   padding: 10px;
-  margin: 0 auto; /* Center the grid horizontally */
+  margin: 0 auto; 
   text-align: center;
 }
 

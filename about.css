@@ -28,7 +28,7 @@ body
 }
 
 .top-links:hover a {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
@@ -59,7 +59,7 @@ body
 }
 
 .bottom-nav a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 .copyright {
@@ -83,8 +83,8 @@ body
 
 .contact {
   font-family: "area-normal", sans-serif;
-  margin-top: 5%; /* Adjust the distance from the bottom */
-  margin-left: 5%; /* Adjust the distance from the right */
+  margin-top: 5%; 
+  margin-left: 5%; 
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -95,12 +95,12 @@ body
   color: white;
   text-decoration: none;
   font-size: 16px;
-  margin-bottom: 2px; /* Add space between links */
+  margin-bottom: 2px; 
 }
 
 
 .contact a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
@@ -108,13 +108,13 @@ body
 p {
   font-family: "area-normal", sans-serif;
   font-size: 16px;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 p1 {
   font-size: 12px;
   font-style: italic;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 
@@ -122,37 +122,34 @@ p1 {
 .intro {
   display: flex;
   justify-content: center;
-  padding-bottom: 60px; /* Adjust the padding as needed */
+  padding-bottom: 60px; 
   margin-top: 20px;
 }
 
 .photo {
   width: 30%;
-  margin-right: 5%; /* Adjust the spacing between the photo and text box */
+  margin-right: 5%;
   margin-bottom: 10%;
 }
 
 .text {
-  width: 20%; /* Adjust the width as needed */
-  text-align: left; /* Align text to the left */
+  width: 20%; 
+  text-align: left; 
   font-family: "area-normal", sans-serif;
 }
 
-/* To ensure the photo and text box don't exceed the height of each other */
 .photo img,
 .text {
   max-width: 100%;
 }
 
-/* Centering the text box vertically within the container */
 .intro {
-  flex-direction: row; /* Display content in a row */
+  flex-direction: row; 
 }
 
 
 
 
-/* Add styles for the hamburger menu */
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -175,13 +172,13 @@ p1 {
   font-family: "area-normal", sans-serif;
   display: none;
   position: fixed;
-  top: 60px; /* Adjusted the top position to leave space for the text */
+  top: 60px; 
   right: 0;
   background-color: #191716;
   padding: 15px;
   flex-direction: column;
   z-index: 3;
-  text-align: right; /* Align the text to the right */
+  text-align: right; 
 
 }
 
@@ -194,30 +191,29 @@ p1 {
 }
 
 .menu a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
 
 @media only screen and (max-width: 767px) {
-  /* Adjust styles for iPhones or smaller screens */
 
   .intro {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Two columns - adjust as needed */
-    gap: 20px; /* Adjust the gap between the columns */
-    width: 100%; /* Change width to 100% to remove extra space */
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+    width: 100%; 
   }
   
   .photo {
     width: 200%;
     margin-left: 10%;
     display: grid;
-    grid-template-rows: auto; /* Two rows - adjust as needed */
+    grid-template-rows: auto; 
   }
   
   .photo img {
-    width: 100%; /* Make the image fill its container */
+    width: 100%; 
   }
   
   .contact {
@@ -226,7 +222,7 @@ p1 {
   }
   
   .text {
-    grid-column: span 2; /* Span across both columns */
+    grid-column: span 2;
     padding: 10px;
     margin-left: 3%;
     width: 80%;

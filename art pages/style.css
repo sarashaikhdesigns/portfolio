@@ -37,7 +37,7 @@ p {
 }
 
 .top-links:hover a {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 
@@ -69,12 +69,12 @@ p {
   display: none;
   position: fixed;
   background-color: #191716;
-  top: 60px; /* Adjusted the top position to leave space for the text */
+  top: 60px; 
   right: 0;
   padding: 15px;
   flex-direction: column;
   z-index: 3;
-  text-align: right; /* Align the text to the right */
+  text-align: right; 
 
 }
 
@@ -88,7 +88,7 @@ p {
 
 
 .menu a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red; 
 }
 
 /* about, resume */
@@ -110,7 +110,7 @@ p {
 }
 
 .bottom-nav a:hover {
-  color: red; /* Replace with the desired hover color */
+  color: red;
 }
 
 
@@ -146,7 +146,7 @@ p {
 .works {
   width: 70%;
   text-align: center;
-  margin: 0 auto; /* This will center the element horizontally */
+  margin: 0 auto;
   margin-bottom: 2%;
 }
 
@@ -163,13 +163,13 @@ p {
 
 
 .caption {
-  width: 70%; /* Adjust the width as needed */
-  margin: 0 auto; /* This centers the element horizontally */
+  width: 70%; 
+  margin: 0 auto; 
 }
 
 .caption p {
   font-family: "area-normal", sans-serif;
-  width: 100%; /* Adjust the width of the paragraphs if needed */
+  width: 100%; 
   font-size: smaller;
 }
 
@@ -190,8 +190,8 @@ img{
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px; /* Adjust the gap between images */
-  padding: 20px; /* Adjust padding as needed */
+  grid-gap: 10px; 
+  padding: 20px; 
   margin-bottom: 10%;
 }
 
@@ -240,7 +240,7 @@ video {
 
 iframe {
   width: 100%;
-  height: 60vh; /* Adjust the percentage based on your preference */
+  height: 60vh; 
   border: none;
   display: block;
   margin: auto;
@@ -254,8 +254,8 @@ iframe {
 
 /* music club */
 .music-club img{
-    height: 200px; /* Set a specific height value */
-    width: 280px; /* Set a specific height value */
+    height: 200px; 
+    width: 280px; 
   }
 .music-club {
   font-style: italic;
