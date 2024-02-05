@@ -290,6 +290,18 @@ iframe {
 /* general art */
 
 
+.heart-rot{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  }
+
+  .heart-rot img {
+    width: 30%;
+    height: 40%; /* Set the desired height for a 3:4 aspect ratio */
+    object-fit: cover; /* Crop the image to cover the container */
+    margin: 0 auto;
+  }
+
 .one{
   margin-top: 10%;
   margin-bottom: 10%;
