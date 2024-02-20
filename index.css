@@ -134,33 +134,11 @@ body
 
 }
 
-.banner h1 {
-  font-family: "area-normal", sans-serif;
-  text-transform: uppercase;
-  font-size: 8.5vw;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  white-space: nowrap;
-}
 
-.banner p {
-  font-family: "area-normal", sans-serif;
-  font-style: italic;
-  position: absolute;
-  font-size: 3vw;
-  text-align: center;
-  top: 65%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
-}
 
 .banner .photo img {
-  margin-top: 5%;
-  width: 80%; 
+  margin-top: -5%;
+  width: 30%; 
   display: block; 
   margin-left: auto; 
   margin-right: auto; 
@@ -180,8 +158,9 @@ body
 
 .description p {
   font-family: "area-normal", sans-serif;
-  font-size: 18px; 
-  padding-top: 5%;
+  font-size: 20px; 
+  font-style: thin;
+  margin-top: -10vw;
   padding-bottom: 5%;
 }
 
@@ -269,38 +248,35 @@ body
   }
 
   
-  .banner h1 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-
-  }
-  
-  .banner p {
-    top: 65%; /* Adjust the vertical position */
-
-  }
   
   .banner .photo img {
-    margin-top: 10%;
-    width: 90%; /* Set the width of the image */
-    padding-top: 10%;
+    width: 50%; /* Set the width of the image */
+    margin-top: -100px;
   }
 
   .description {
-    width: 85%;
+    width: 80%;
     margin: 0 auto; /* Center the element horizontally */
   }
 
+  .description p{
+    margin-top: -140px;
+    font-size: 15px;
+  }
+
   .nav a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .bottom-nav a {
-    font-size: 10px;
+    font-size: 12px;
   }
   .copyright a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .photo-guide h1{
+    font-size: 30px;
   }
 
 }
