@@ -131,7 +131,7 @@ body
 
 .banner {
   position: relative;
-  margin-bottom: 500px;
+  padding-bottom: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
