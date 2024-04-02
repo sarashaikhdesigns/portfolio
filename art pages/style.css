@@ -301,6 +301,17 @@ iframe {
     margin: 0 auto;
   }
 
+
+.homebody{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .homebody img {
+    width: 60%;
+    height: 40%; /* Set the desired height for a 3:4 aspect ratio */
+  }
+
 .one{
   margin-top: 10%;
   margin-bottom: 10%;
