@@ -11,7 +11,7 @@ body
 
 /* sara, NYC, email */
 .nav {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   display: flex;
   align-items: center;
   position: fixed;
@@ -58,7 +58,7 @@ body
 }
 
 .menu {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   display: none;
   position: fixed;
   background-color: #191716;
@@ -87,7 +87,7 @@ body
 /* about, resume */
 
 .bottom-nav {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -110,7 +110,7 @@ body
 /* copyright */
 
 .copyright {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -190,11 +190,11 @@ body
 
 
 .photo-guide p{
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
 }
 
 .photo-guide h1{
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
 }
 
 
