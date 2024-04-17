@@ -8,7 +8,7 @@ body
 
 /* sara, NYC, email */
 .nav {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   display: flex;
   align-items: center;
   position: fixed;
@@ -35,7 +35,7 @@ body
 
 
 .title{
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   font-style: italic;
   text-align: center;
   margin-top: 50px;
@@ -43,7 +43,7 @@ body
 
 
 .bottom-nav {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -63,7 +63,7 @@ body
 }
 
 .copyright {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -82,7 +82,7 @@ body
 
 
 .contact {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   margin-top: 5%; 
   margin-left: 5%; 
   padding: 5px;
@@ -91,7 +91,7 @@ body
 }
 
 .contact a {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -106,7 +106,7 @@ body
 
 
 p {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   font-size: 16px;
   text-align: left; 
 }
@@ -135,7 +135,7 @@ p1 {
 .text {
   width: 20%; 
   text-align: left; 
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
 }
 
 .photo img,
@@ -169,7 +169,7 @@ p1 {
 }
 
 .menu {
-  font-family: "area-normal", sans-serif;
+  font-family: monospace;
   display: none;
   position: fixed;
   top: 60px; 
