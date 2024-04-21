@@ -480,3 +480,52 @@ font-size: 5vw;
 
 
   }
+
+
+
+
+
+/* banner */
+
+.banner {
+  position: relative;
+  padding-bottom: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+}
+
+.photo img {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.photo:hover img {
+  visibility: hidden; /* Hides the image when .photo is hovered */
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url('images/logo2.png'); /* Default image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover::before {
+  opacity: 1;
+}
