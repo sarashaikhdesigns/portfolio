@@ -1,0 +1,296 @@
+
+body
+{
+    background-color: #191716;
+    color: white; 
+    justify-content: center;
+}
+
+
+
+
+/* sara, NYC, email */
+.nav {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 3;
+}
+
+.nav a {
+  content: '\2022';
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.top-links:hover a {
+  color: red; 
+}
+
+
+
+
+
+/* dropdown menu */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 4;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.menu {
+  font-family: monospace;
+  display: none;
+  position: fixed;
+  background-color: #191716;
+  top: 60px; 
+  right: 0;
+  padding: 15px;
+  flex-direction: column;
+  z-index: 3;
+  text-align: right; 
+
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.menu a:hover {
+  color: red; 
+}
+
+/* about, resume */
+
+.bottom-nav {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.bottom-nav a:hover {
+  color: red; 
+}
+
+
+/* copyright */
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+
+/* banner */
+
+.banner {
+  position: relative;
+  padding-bottom: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+}
+
+.photo img {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.photo:hover img {
+  visibility: hidden; /* Hides the image when .photo is hovered */
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url('index images/logo2.png'); /* Default image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover::before {
+  opacity: 1;
+}
+
+
+
+
+
+/* menu for art */
+
+
+.photo-guide {
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 10%; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.photo-guide p{
+  font-family: monospace;
+}
+
+.photo-guide h1{
+  font-family: monospace;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+
+
+.grid-item img {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-link img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-link img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* text in photo guide */
+.photo-guide h1 {
+  margin-top: -5%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.photo-guide p {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  /* Adjust styles for iPhones or smaller screens */
+  body {
+    font-size: 14px;
+  }
+
+  
+
+/* banner */
+
+.banner {
+  padding-bottom: 500px;
+}
+
+
+
+ 
+
+  .description {
+    width: 80%;
+    margin: 0 auto; /* Center the element horizontally */
+  }
+
+  .description p{
+    margin-top: -140px;
+    font-size: 15px;
+  }
+
+  .nav a {
+    font-size: 10px;
+  }
+
+  .bottom-nav a {
+    font-size: 10px;
+  }
+  .copyright a {
+    font-size: 10px;
+  }
+
+  .photo-guide h1{
+    font-size: 30px;
+  }
+
+}

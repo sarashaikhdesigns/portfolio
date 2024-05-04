@@ -1,0 +1,328 @@
+body
+{
+    background-color: #191716;
+    color: white; 
+    justify-content: center;
+
+}
+
+
+p {
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* banner */
+
+.banner {
+  padding-top: 100px;
+  margin-bottom: -50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px; /* Change height to desired value */
+}
+
+.photo {
+  position: relative; /* Set position to relative */
+  width: 500px;
+  height: 500px;
+}
+
+.photo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/logo2.png'); /* Default image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover::before {
+  opacity: 1;
+}
+
+
+
+/* sara, NYC, email */
+.nav {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 3;
+}
+
+.nav a {
+  content: '\2022';
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.top-links:hover a {
+  color: red; 
+}
+
+
+
+
+
+/* dropdown menu */
+.hamburger-menu {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 4;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.menu {
+  font-family: monospace;
+  display: none;
+  position: fixed;
+  background-color: #191716;
+  top: 60px; 
+  right: 0;
+  padding: 15px;
+  flex-direction: column;
+  z-index: 3;
+  text-align: right; 
+
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.menu a:hover {
+  color: red; 
+}
+
+/* about, resume */
+
+.bottom-nav {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.bottom-nav a:hover {
+  color: red;
+}
+
+
+/* copyright */
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+/* works */
+
+.title{
+  font-family: monospace;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2vw;
+}
+
+.works {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+
+
+.heading{
+  margin: 1%;
+}
+.heading p {
+  font-family: monospace;
+  font-style: italic;
+}
+
+
+
+.caption {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+.caption p {
+  font-family: monospace;
+  width: 100%; 
+  font-size: 14px;
+}
+
+
+img{
+  width: 70%;
+}
+
+
+
+
+
+
+/* slideshow */
+
+
+.slideshow-container, .slideshow-container2 {
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.mySlides, .mySlides2 {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/* general art */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone media queries */
+
+
+@media only screen and (max-width: 767px), (max-device-width: 767px) {
+  .works {
+    width: 100%;
+  }
+
+  .img{
+    width: 70%;
+  }
+
+  .caption {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading{
+    margin: 2%;
+  }
+
+  .heading p {
+    margin: 10%;
+    display: inline;
+  }
+
+
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; 
+    padding: 20px; 
+    margin-bottom: 10%;
+  }
+
+.title h1{
+padding-top: 10%;
+font-size: 5vw;
+}
+
+
+
+.nav a {
+  font-size: 10px;
+}
+
+.bottom-nav a {
+  font-size: 10px;
+}
+.copyright a {
+  font-size: 10px;
+}
+
+
+  }
+
+
