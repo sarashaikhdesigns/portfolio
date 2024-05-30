@@ -248,7 +248,7 @@ max-width: 100%;
 .riot-grrrl img{
 width: 27%;
 margin-left: 20%;
-margin-top: -20%;
+margin-top: -15%;
 }
 
 .heartrot {
@@ -260,7 +260,7 @@ transform: rotate(15deg);
 width: 25%;
 margin-top: -80%;
 margin-bottom: 10%;
-margin-right: 65%;
+margin-right: 60%;
 }
 
 .faye-webster {
@@ -271,7 +271,7 @@ transform: rotate(-15deg);
 .faye-webster img{
 width: 55%;
 margin-left: 80%;
-margin-top: -30%;
+margin-top: -50%;
 }
 
 
@@ -292,7 +292,7 @@ max-width: 100%;
 }
 
 .locals-eye img{
-margin-top: -10%;
+width: 50%;
 margin-right: 10%;
 }
 
@@ -301,8 +301,9 @@ max-width: 100%;
 }
 
 .cyborg img {
+width: 50%;
 margin-top: -70%;
-margin-bottom: 5%;
+margin-bottom: 10%;
 margin-left: 60%;
 }
 
