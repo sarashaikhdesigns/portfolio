@@ -159,12 +159,6 @@ p {
 
 /* works */
 
-.title{
-  font-family: monospace;
-  text-align: left;
-  margin-top: 5%;
-  font-size: 2vw;
-}
 
 .works {
   width: 70%;
@@ -173,22 +167,46 @@ p {
   padding-top: 5%;
 }
 
+.works img{
+  width: 100%;
+}
+
+.works video{
+  width: 100%;
+}
 
 .heading p {
   font-family: monospace;
+  text-align: left;
 }
 
+.heading p1 {
+  font-family: monospace;
+  text-align: left;
+  font-size: 2vw;
+  font-style: italic;
+}
 
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  gap: 20px; /* Optional: adds space between the columns */
+}
+.heading, .caption {
+  flex: 1;
+}
 
 .caption {
-  width: 70%; 
+  width: 100%; 
   margin: 0 auto; 
 }
 
 .caption p {
+  width: 100%;
   font-family: monospace;
-  width: 100%; 
   font-size: 14px;
+  text-align: left;
 }
 
 

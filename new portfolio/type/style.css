@@ -1,8 +1,10 @@
-body {
+body
+{
     background-color: #191716;
     color: white; 
     justify-content: center;
     overflow-x: hidden;
+
 }
 
 
@@ -154,6 +156,51 @@ p {
   padding: 5px;
   margin-right: 10px;
   font-size: 16px;
+}
+
+
+/* works */
+
+.title{
+  font-family: monospace;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2vw;
+}
+
+.works {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+
+
+.heading{
+  margin: 1%;
+}
+.heading p {
+  font-family: monospace;
+  font-style: italic;
+}
+
+
+
+.caption {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+.caption p {
+  font-family: monospace;
+  width: 100%; 
+  font-size: 14px;
+}
+
+
+img{
+  width: 40%;
 }
 
 
