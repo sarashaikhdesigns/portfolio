@@ -238,7 +238,7 @@ body
 
 
 
-@media only screen and (max-width: 539px) {
+@media only screen and (max-width: 767px) {
   /* Adjust styles for iPhones or smaller screens */
   body {
     font-size: 14px;
@@ -248,6 +248,23 @@ body
 
 /* banner */
 
+.banner {
+  padding-bottom: 500px;
+}
+
+
+
+ 
+
+  .description {
+    width: 80%;
+    margin: 0 auto; /* Center the element horizontally */
+  }
+
+  .description p{
+    margin-top: -140px;
+    font-size: 15px;
+  }
 
   .nav a {
     font-size: 10px;
@@ -261,7 +278,7 @@ body
   }
 
   .photo-guide {
-  margin-top: 120%;
+    margin-top: 120%;
   }
 
   .photo-guide h1{
