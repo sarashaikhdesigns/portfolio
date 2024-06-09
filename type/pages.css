@@ -40,6 +40,7 @@ p {
 
 
 /* sara, NYC, email */
+
 .nav {
   font-family: monospace;
   display: flex;
@@ -61,7 +62,7 @@ p {
 }
 
 .top-links:hover a {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 
@@ -112,7 +113,7 @@ p {
 
 
 .menu a:hover {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 /* about, resume */
@@ -134,7 +135,7 @@ p {
 }
 
 .bottom-nav a:hover {
-  color: red;
+  filter: drop-shadow(0 0 10px white);
 }
 
 
@@ -159,6 +160,27 @@ p {
 
 /* works */
 
+.title{
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: -5%;
+  margin-top: 5%;
+  font-size: 2vw;
+}
+
+
+.title h1{
+  transition: filter 0.3s ease-in-out;
+}
+
+.title h1:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+.title a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent */
+}
 
 .works {
   width: 70%;

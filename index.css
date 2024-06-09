@@ -31,7 +31,7 @@ body
 }
 
 .top-links:hover a {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 
@@ -81,7 +81,7 @@ body
 
 
 .menu a:hover {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 /* about, resume */
@@ -103,7 +103,7 @@ body
 }
 
 .bottom-nav a:hover {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 
