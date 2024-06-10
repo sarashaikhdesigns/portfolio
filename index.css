@@ -209,6 +209,7 @@ body
 
 .image-link img:hover {
   transform: scale(1.1);
+  filter: drop-shadow(0 0 10px white);
 }
 
 
@@ -223,6 +224,21 @@ body
 
 .photo-guide p {
   font-size: 18px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.slideshow-container img {
+  width: 35vw;
+  height: 30vw;
 }
 
 
@@ -261,7 +277,7 @@ body
   }
 
   .photo-guide {
-  margin-top: 120%;
+  margin-top: 30%;
   }
 
   .photo-guide h1{

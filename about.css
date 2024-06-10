@@ -34,11 +34,12 @@ body
 
 
 
+
 .title{
   font-family: monospace;
-  font-style: italic;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5%;
+  font-size: 2vw;
 }
 
 

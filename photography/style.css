@@ -62,7 +62,7 @@ p {
 }
 
 .top-links:hover a {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 
@@ -113,7 +113,7 @@ p {
 
 
 .menu a:hover {
-  color: red; 
+  filter: drop-shadow(0 0 10px white);
 }
 
 /* about, resume */
@@ -135,7 +135,7 @@ p {
 }
 
 .bottom-nav a:hover {
-  color: red;
+  filter: drop-shadow(0 0 10px white);
 }
 
 
