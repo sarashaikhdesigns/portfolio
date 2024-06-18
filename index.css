@@ -162,11 +162,8 @@ body
 
 .photo-guide {
   display: flex;
-  /* justify-content: center; 
-  align-items: center;  */
-  height: 100vh; 
+  height: 100%; 
   width: 100%; 
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -184,7 +181,7 @@ body
 
 .image-grid {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
   gap: 10px;
   padding: 10px;
   margin: 0 auto; 
@@ -200,7 +197,6 @@ body
 }
 
 .image-link img {
-  width: 70%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
@@ -231,16 +227,16 @@ body
 }
 
 .slideshow-container img {
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .type{
-
+/* margin-right: 70%; */
 }
 
 .fashion{
-
+/* margin-left: 50%; */
 }
 
 .photo{
