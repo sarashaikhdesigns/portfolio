@@ -1,10 +1,8 @@
-body
-{
+body {
     background-color: #191716;
     color: white; 
     justify-content: center;
     overflow-x: hidden;
-
 }
 
 
@@ -42,6 +40,7 @@ p {
 
 
 /* sara, NYC, email */
+
 .nav {
   font-family: monospace;
   display: flex;
@@ -164,43 +163,79 @@ p {
 .title{
   font-family: monospace;
   text-align: center;
+  margin-bottom: -5%;
   margin-top: 5%;
   font-size: 2vw;
 }
 
+
+.title h1{
+  transition: filter 0.3s ease-in-out;
+}
+
+.title h1:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+.title a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent */
+}
+
 .works {
   width: 70%;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  margin-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
 }
 
-
-
-.heading{
-  margin: 1%;
+.works img{
+  width: 100%;
 }
+
+.works video{
+  width: 100%;
+}
+
 .heading p {
   font-family: monospace;
+  text-align: left;
+}
+
+.heading p1 {
+  font-family: monospace;
+  text-align: left;
+  font-size: 25px;
   font-style: italic;
 }
 
-
+.container {
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+  display: flex;
+  gap: 20px; 
+}
+.heading, .caption {
+  flex: 1;
+}
 
 .caption {
-  width: 70%; 
+  width: 100%; 
   margin: 0 auto; 
 }
 
 .caption p {
+  width: 100%;
   font-family: monospace;
-  width: 100%; 
   font-size: 14px;
+  text-align: left;
 }
 
 
 img{
-  width: 40%;
+  width: 70%;
 }
 
 
@@ -210,204 +245,6 @@ img{
 
 /* general art */
 
-.butterfly{
-  position: relative;
-  width: 110%;
-}
-
-.butterfly img{
-  margin-top: -29%;
-  margin-right: 40%;
-  margin-bottom: 30%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.swan {
-}
-
-
-.swan img{
-  max-width: 100%;
-  margin-right: 50%;
-  margin-top: 15%;
-}
-
-.self-portrait {
-}
-
-.self-portrait img{
-  max-width: 100%;
-  margin-left: 40%;
-  margin-top: -45%;
-  margin-bottom: 10%;
-}
-
-.light {
-  width: 80%;
-}
-
-.light img{
-  max-width: 100%;
-  margin-right: 80%;
-  margin-left: -10%;
-  margin-top: 0%;
-}
-
-.bees {
-  width: 90%;
-}
-
-.bees img{
-  max-width: 100%;
-  margin-top: -80%;
-  margin-bottom: 7%;
-  margin-left: 10%;
-}
-
-
-.guggenheim {
-  width: 80%;
-}
-
-.guggenheim img{
-  max-width: 100%;
-  margin-top: -80%;
-  margin-bottom: 5%;
-  margin-left: 95%;
-}
-
-
-.castle {
-  width: 80%;
-}
-
-.castle img{
-  max-width: 100%;
-  margin-right: 70%;
-  margin-left: -10%;
-}
-
-
-.grandparents {
-}
-
-.grandparents img{
-  max-width: 100%;
-  margin-top: -60%;
-  margin-bottom: 10%;
-}
-
-.body {
-  width: 60%;
-}
-
-.body img{
-  max-width: 100%;
-  margin-bottom: 20%;
-  margin-top: -60%;
-  margin-left: 90%;
-  margin-right: -100%;
-
-}
-
-.sister {
-  width: 70%;
-}
-
-.sister img{
-  max-width: 100%;
-  margin-right: 70%;
-  margin-top: -5%;
-}
-
-.fish {
-  width: 70%;
-}
-
-.fish img{
-  max-width: 100%;
-  margin-left: 40%;
-  margin-top: -65%;
-  margin-bottom: 10%;
-}
-
-
-
-.flower-woman {
-  width: 80%;
-}
-
-.flower-woman img{
-  max-width: 100%;
-  margin-top: -80%;
-  margin-left: 85%;
-  margin-bottom: 20%;
-}
-
-.secrets {
-  width: 80%;
-}
-
-.secrets img{
-  max-width: 100%;
-  margin-left: 20%;
-  margin-top: -5%;
-}
-
-
-.class {
-  width: 85%;
-}
-
-.class img{
-  max-width: 100%;
-  margin-top: -35%;
-  margin-left: 80%;
-}
-
-
-
-
-
-
-
-
-
-.swan img,
-.self-portrait img,
-.light img,
-.bees img,
-.guggenheim img,
-.castle img,
-.grandparents img,
-.body img,
-.sister img,
-.fish img,
-.flower-woman img,
-.secrets img,
-.class img {
-  transition: filter 0.3s ease-in-out;
-}
-
-.swan img:hover,
-.self-portrait img:hover,
-.light img:hover,
-.bees img:hover,
-.guggenheim img:hover,
-.castle img:hover,
-.grandparents img:hover,
-.body img:hover,
-.sister img:hover,
-.fish img:hover,
-.flower-woman img:hover,
-.secrets img:hover,
-.class img:hover {
-  filter: drop-shadow(0 0 10px white);
-}
-
-
-
 
 
 
@@ -415,8 +252,13 @@ img{
 
 
 @media only screen and (max-width: 767px), (max-device-width: 767px) {
+  .works {
+    width: 100%;
+  }
 
-
+  .img{
+    width: 70%;
+  }
 
   
   .caption {
@@ -424,14 +266,6 @@ img{
     text-align: center;
   }
   
-  .heading{
-    margin: 2%;
-  }
-
-  .heading p {
-    margin: 10%;
-    display: inline;
-  }
 
 
 
