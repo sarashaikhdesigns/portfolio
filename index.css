@@ -162,10 +162,10 @@ body
 
 .photo-guide {
   display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100vh; /* Full height */
-    width: 100%; /* Full width */
+  /* justify-content: center; 
+  align-items: center;  */
+  height: 100vh; 
+  width: 100%; 
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -184,13 +184,12 @@ body
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  grid-template-columns: 1fr; 
   gap: 10px;
   padding: 10px;
   margin: 0 auto; 
   text-align: center;
 }
-
 
 
 .grid-item img {
@@ -215,12 +214,7 @@ body
 
 
 /* text in photo guide */
-.photo-guide h1 {
-  margin-top: -5%;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-style: italic;
-}
+
 
 .photo-guide p {
   font-size: 18px;
@@ -237,19 +231,25 @@ body
 }
 
 .slideshow-container img {
-  width: 35vw;
+  width: 30vw;
   height: 30vw;
 }
 
+.type{
 
-
-
-
-.gif{
-  padding-top: 180px;
-  text-align: center;
 }
 
+.fashion{
+
+}
+
+.photo{
+margin-top: -30%;
+}
+
+.fine-arts{
+
+}
 
 
 
@@ -277,7 +277,7 @@ body
   }
 
   .photo-guide {
-  margin-top: 30%;
+  margin-top: 5%;
   }
 
   .photo-guide h1{
