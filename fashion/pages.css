@@ -40,6 +40,7 @@ p {
 
 
 /* sara, NYC, email */
+
 .nav {
   font-family: monospace;
   display: flex;
@@ -159,12 +160,35 @@ p {
 
 /* works */
 
+.title{
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: -5%;
+  margin-top: 5%;
+  font-size: 2vw;
+}
+
+
+.title h1{
+  transition: filter 0.3s ease-in-out;
+}
+
+.title h1:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+.title a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent */
+}
 
 .works {
   width: 70%;
   text-align: left;
   margin: 0 auto;
   padding-top: 5%;
+  padding-bottom: 5%;
+
 }
 
 .works img{
@@ -183,15 +207,15 @@ p {
 .heading p1 {
   font-family: monospace;
   text-align: left;
-  font-size: 2vw;
+  font-size: 25px;
   font-style: italic;
 }
 
 .container {
   margin-top: 5%;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   display: flex;
-  gap: 20px; /* Optional: adds space between the columns */
+  gap: 20px; 
 }
 .heading, .caption {
   flex: 1;
@@ -242,14 +266,6 @@ img{
     text-align: center;
   }
   
-  .heading{
-    margin: 2%;
-  }
-
-  .heading p {
-    margin: 10%;
-    display: inline;
-  }
 
 
 
