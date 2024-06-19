@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
       displayNextSlide();
   }
 
-  showSlides("typeSlides", 2000);    // Typographic Design changes every 2 seconds
-  showSlides("fashionSlides", 2500); // Fashion Design changes every 2.5 seconds
-  showSlides("photoSlides", 1000);   // Photography changes every 3 seconds
-  showSlides("artSlides", 1500);     // Fine Arts changes every 3.5 seconds
+  showSlides("typeSlides", 2000);    
+  showSlides("fashionSlides", 1500); 
+  showSlides("photoSlides", 1000);  
+  showSlides("artSlides", 1500);     
 });
