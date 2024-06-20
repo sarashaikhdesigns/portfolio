@@ -311,6 +311,10 @@ width: 30%;
     font-family: monospace;
     text-align: left;
   }
+
+  .heading p1 {
+    font-size: 20px;
+  }
   
   .heading h1 {
     font-family: monospace;
