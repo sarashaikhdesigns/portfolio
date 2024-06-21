@@ -169,13 +169,6 @@ font-size: 2vw;
 }
 
 
-.title h1{
-transition: filter 0.3s ease-in-out;
-}
-
-/* .title h1:hover {
-filter: drop-shadow(0 0 10px white);
-} */
 
 .title a {
 text-decoration: none; /* Removes the underline */
