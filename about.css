@@ -204,17 +204,18 @@ p1 {
     grid-template-columns: 1fr 2fr; 
     gap: 20px;
     width: 100%; 
-  }
+    margin-left: 7%;
+    }
   
   .photo {
-    width: 200%;
+    width: 150%;
     margin-left: 10%;
     display: grid;
     grid-template-rows: auto; 
   }
   
-  .photo img {
-    width: 100%; 
+  .photo img{
+    width: 200%;
   }
   
   .contact {
@@ -230,6 +231,10 @@ p1 {
   }
   
 
+  .title h1{
+    padding-top: 10%;
+    font-size: 5vw;
+    }
 
   .nav a {
     font-size: 10px;
@@ -243,6 +248,3 @@ p1 {
   }
   
 }
-
-
-
