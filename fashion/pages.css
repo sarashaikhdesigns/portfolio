@@ -242,6 +242,31 @@ img{
 
 
 
+.wc-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.wc-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.wc-logo img{
+  transition: filter 0.3s ease-in-out;
+}
+
+
+.wc-logo img:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+
 
 /* general art */
 

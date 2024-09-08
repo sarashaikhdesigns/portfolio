@@ -224,6 +224,15 @@ img{
 }
 
 
+.wildcard{
+width: 100%;
+}
+
+.wildcard img{
+  margin-top: 1%;
+  margin-left: -5%;
+  margin-right: 40%;
+}
 
 .heart-break{
   width: 80%;
@@ -292,7 +301,8 @@ img{
 .star img,
 .earrings img,
 .wings img,
-.chains img {
+.chains img,
+.wildcard img{
   transition: filter 0.3s ease-in-out;
 }
 
@@ -301,7 +311,8 @@ img{
 .star img:hover,
 .earrings img:hover,
 .wings img:hover,
-.chains img:hover {
+.chains img:hover,
+.wildcard img:hover{
   filter: drop-shadow(0 0 10px white);
 }
 
