@@ -278,6 +278,17 @@ margin-top: -50%;
 }
 
 
+.lesmiss {
+  max-width: 100%;
+}
+  
+.lesmiss img{
+  width: 30%;
+  margin-top: -25%;
+  margin-left: 60%;
+  margin-bottom: 20%;
+}
+  
 
 .music-club {
 max-width: 100%;
@@ -321,7 +332,8 @@ margin-left: 60%;
 .heartrot img,
 .music-club img,
 .locals-eye img,
-.cyborg img {
+.cyborg img,
+.lesmiss img {
   transition: filter 0.3s ease-in-out;
 }
 
@@ -333,9 +345,11 @@ margin-left: 60%;
 .heartrot img:hover,
 .music-club img:hover,
 .locals-eye img:hover, 
-.cyborg img:hover {
+.cyborg img:hover,
+.lesmiss img:hover {
   filter: drop-shadow(0 0 10px white);
 }
+
 
 
 
