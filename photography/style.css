@@ -1,0 +1,342 @@
+body {
+  background-color: #191716;
+  color: white; 
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+
+p {
+font-family: monospace;
+font-size: 16px;
+text-align: center;
+}
+
+
+/* logo */
+
+.logo {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 10px;
+opacity: 0.2; /* 20% opacity */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: -10;
+}
+
+.logo img {
+width: auto;
+height: auto;
+max-width: 130%;
+max-height: 130%;
+opacity: 1; /* Make sure the image itself is fully opaque */
+}
+
+
+
+/* sara, NYC, email */
+
+.nav {
+font-family: monospace;
+display: flex;
+align-items: center;
+position: fixed;
+top: 0;
+padding: 15px;
+z-index: 3;
+}
+
+.nav a {
+content: '\2022';
+color: white;
+text-decoration: none;
+padding: 5px;
+margin: 0 10px;
+font-size: 16px;
+transition: color 0.3s;
+}
+
+.top-links:hover a {
+filter: drop-shadow(0 0 10px white);
+}
+
+
+
+
+
+/* dropdown menu */
+.hamburger-menu {
+font-family: monospace;
+display: flex;
+flex-direction: column;
+cursor: pointer;
+padding: 10px;
+position: fixed;
+top: 15px;
+right: 15px;
+z-index: 4;
+}
+
+.bar {
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 5px 0;
+}
+
+.menu {
+font-family: monospace;
+display: none;
+position: fixed;
+background-color: #191716;
+top: 60px; 
+right: 0;
+padding: 15px;
+flex-direction: column;
+z-index: 3;
+text-align: right; 
+
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+padding: 5px;
+font-size: 16px;
+margin: 5px 0;
+}
+
+
+.menu a:hover {
+filter: drop-shadow(0 0 10px white);
+}
+
+/* about, resume */
+
+.bottom-nav {
+font-family: monospace;
+position: fixed;
+bottom: 0;
+left: 0;
+padding: 15px;
+}
+
+.bottom-nav a {
+color: white;
+text-decoration: none;
+padding: 5px;
+margin-right: 10px;
+font-size: 16px;
+}
+
+.bottom-nav a:hover {
+filter: drop-shadow(0 0 10px white);
+}
+
+
+/* copyright */
+
+.copyright {
+font-family: monospace;
+position: fixed;
+bottom: 0;
+right: 0;
+padding: 15px;
+}
+
+.copyright a {
+color: white;
+text-decoration: none;
+padding: 5px;
+margin-right: 10px;
+font-size: 16px;
+}
+
+
+/* works */
+
+.title{
+font-family: monospace;
+text-align: center;
+margin-bottom: -5%;
+margin-top: 5%;
+font-size: 2vw;
+}
+
+
+
+.title a {
+text-decoration: none; /* Removes the underline */
+color: inherit; /* Inherits the color from its parent */
+}
+
+.works {
+width: 70%;
+text-align: left;
+margin: 0 auto;
+padding-top: 5%;
+padding-bottom: 5%;
+
+}
+
+.works img{
+width: 100%;
+}
+
+.works video{
+width: 100%;
+}
+
+
+
+.heading p {
+font-family: monospace;
+text-align: left;
+}
+
+.heading p1 {
+font-family: monospace;
+text-align: left;
+font-size: 25px;
+font-style: italic;
+}
+
+.container {
+margin-top: 5%;
+/* margin-bottom: 5%; */
+display: flex;
+gap: 20px; 
+}
+.heading {
+margin-top: 5%;
+}
+
+.caption {
+width: 100%; 
+margin: 0 auto; 
+}
+
+.caption p {
+width: 100%;
+font-family: monospace;
+font-size: 14px;
+text-align: left;
+}
+
+
+img{
+width: 30%;
+}
+
+
+
+
+/* general art */
+
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth slide transition */
+}
+
+
+.slides a img {
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.slides a img:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.slides img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  display: block;
+  margin: 0 auto; /* Center images horizontally */
+}
+
+/* Hide all slides except the first one */
+.slides img:not(:first-child) {
+  display: none;
+}
+
+
+
+
+/* phone media queries */
+
+
+@media only screen and (max-width: 767px), (max-device-width: 767px) {
+  .works {
+    width: 100%;
+  }
+
+  .img{
+    width: 70%;
+  }
+
+  
+  .caption {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading{
+    margin: 2%;
+  }
+
+  .heading p {
+    margin: 10%;
+    display: inline;
+  }
+  .heading p {
+    font-family: monospace;
+    text-align: left;
+  }
+
+  .heading p1 {
+    font-size: 20px;
+  }
+  
+  .heading h1 {
+    font-family: monospace;
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+  }
+
+
+
+.title h1{
+padding-top: 10%;
+font-size: 5vw;
+}
+
+
+
+.nav a {
+  font-size: 10px;
+}
+
+.bottom-nav a {
+  font-size: 10px;
+}
+.copyright a {
+  font-size: 10px;
+}
+
+
+  }
+
+
