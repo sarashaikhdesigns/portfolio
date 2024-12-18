@@ -63,6 +63,50 @@ body
   filter: drop-shadow(0 0 10px white);
 }
 
+/* designer */
+
+.designer-note {
+  font-family: monospace;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.designer-note a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* logo */
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  opacity: 0.2; /* 20% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 130%;
+  max-height: 130%;
+  opacity: 1; /* Make sure the image itself is fully opaque */
+}
+
+
 .copyright {
   font-family: monospace;
   position: fixed;
@@ -197,7 +241,7 @@ p1 {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 367px) {
 
   .intro {
     display: grid;
