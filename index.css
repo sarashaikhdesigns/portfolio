@@ -372,51 +372,26 @@ margin-left: 50%;
 /* phone media queries */
 
 
-@media only screen and (max-width: 367px), (max-device-width: 367px) {
+@media only screen and (max-width: 367px) {
   .works {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Adds spacing between items */
     width: 100%;
+    margin: 0 auto; /* Center align the grid */
   }
 
-  .img{
-    width: 70%;
+  .works img {
+    width: 100%; /* Ensure images take full width of the column */
+    margin: 0 auto; /* Center align images */
   }
 
-  
-  .caption {
-    margin: 0 auto;
-    text-align: center;
+  .nav a, 
+  .bottom-nav a, 
+  .copyright a {
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
-  
-  .heading{
-    margin: 2%;
-  }
-
-  .heading p {
-    margin: 10%;
-    display: inline;
-  }
-
-
-
-.title h1{
-padding-top: 10%;
-font-size: 5vw;
 }
 
-
-
-.nav a {
-  font-size: 10px;
-}
-
-.bottom-nav a {
-  font-size: 10px;
-}
-.copyright a {
-  font-size: 10px;
-}
-
-
-  }
 
 
