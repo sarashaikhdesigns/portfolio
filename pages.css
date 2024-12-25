@@ -75,53 +75,27 @@ a{
 
 
 
+/* designer */
 
-/* dropdown menu */
-.hamburger-menu {
+.designer-note {
   font-family: monospace;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
   position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 4;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0;
-}
-
-.menu {
-  font-family: monospace;
-  display: none;
-  position: fixed;
-  background-color: #191716;
-  top: 60px; 
+  bottom: 0;
   right: 0;
   padding: 15px;
-  flex-direction: column;
-  z-index: 3;
-  text-align: right; 
-
 }
 
-.menu a {
+.designer-note a {
   color: white;
   text-decoration: none;
   padding: 5px;
-  font-size: 16px;
-  margin: 5px 0;
+  margin-right: 10px;
+  font-size: 12px;
+  font-style: italic;
 }
 
 
-.menu a:hover {
-  filter: drop-shadow(0 0 10px white);
-}
+
 
 /* about, resume */
 
@@ -146,12 +120,15 @@ a{
 }
 
 
+
+
+
 /* copyright */
 
 .copyright {
   font-family: monospace;
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   padding: 15px;
 }
@@ -163,6 +140,8 @@ a{
   margin-right: 10px;
   font-size: 16px;
 }
+
+
 
 
 /* works */
