@@ -316,11 +316,11 @@ margin-top: -90%;
 margin-left: -100%;
 }
 
-.fine-art {
+.fine-arts {
 max-width: 100%;
 }
 
-.fine-art img{
+.fine-arts img{
 padding: 2%;
 width: 60%;
 margin-top: -70%;
@@ -341,7 +341,7 @@ margin-left: 50%;
 .fmn img,
 .zineify img,
 .photos img,
-.fine-art img,
+.fine-arts img,
 .lesmiss img
 .bluenar img {
   transition: filter 0.3s ease-in-out;
@@ -358,7 +358,7 @@ margin-left: 50%;
 .fmn img:hover,
 .zineify img:hover,
 .photos img:hover,
-.fine-art img:hover,
+.fine-arts img:hover,
 .lesmiss img:hover, 
 .bluenar img:hover {
   filter: drop-shadow(0 0 10px white);
