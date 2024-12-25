@@ -68,7 +68,7 @@ body
 .designer-note {
   font-family: monospace;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   padding: 15px;
 }
@@ -110,7 +110,7 @@ body
 .copyright {
   font-family: monospace;
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   padding: 15px;
 }
