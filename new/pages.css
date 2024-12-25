@@ -12,6 +12,13 @@ p {
   text-align: center;
 }
 
+a{
+  color: white;
+}
+
+.caption:hover a {
+  filter: drop-shadow(0 0 10px white);
+}
 
 /* logo */
 
@@ -238,15 +245,10 @@ img{
   width: 70%;
 }
 
-.lesmiss img{
-  width: 100%
+
+img{
+  width: 70%;
 }
-
-.lesmiss {
-  width: 100%
-}
-
-
 
 
 
