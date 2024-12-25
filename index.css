@@ -190,13 +190,13 @@ img{
 
 .polaris {
 max-width: 100%;
-transform: rotate(5deg);
+transform: rotate(-5deg);
 }
 
 .polaris img{
-margin-top: 10%;
-margin-left: -65%;
-width: 65%;
+margin-top: -50%;
+margin-left: 55%;
+width: 55%;
 }
 
 
@@ -207,10 +207,10 @@ transform: rotate(-10deg);
 }
 
 .homebody img{
-margin-top: -105%;
+margin-top: -25%;
 margin-bottom: 10%;
-margin-left: 50%;
-width: 70%;
+margin-left: -70%;
+width: 80%;
 }
 
 
@@ -222,20 +222,19 @@ max-width: 100%;
 .wildcard img{
 padding: 5%;
 margin-top: -5%;
-margin-bottom: 20%;
 margin-left: -5%;
 width: 80%;
 }
 
 .riot-grrrl {
 max-width: 100%;
-transform: rotate(-5deg);
+transform: rotate(5deg);
 }
 
 .riot-grrrl img{
 width: 45%;
-margin-left: -50%;
-margin-top: -15%;
+margin-left: -60%;
+margin-top: -5%;
 }
 
 .fmn {
@@ -245,17 +244,16 @@ max-width: 100%;
 .fmn img{
 width: 70%;
 margin-left: 50%;
-margin-top: -100%;
-margin-bottom: 25%;
+margin-top: -60%;
+margin-bottom: 5%;
 }
 
 .pttr {
 max-width: 100%;
-transform: rotate(15deg);
 }
 
 .pttr img{
-width: 80%;
+width: 90%;
 margin-top: 5%;
 margin-left: -65%;
 }
@@ -265,10 +263,11 @@ max-width: 100%;
 }
 
 .zineify img{
-width: 65%;
-margin-top: -100%;
-margin-bottom: 100%;
+width: 85%;
+margin-top: -50%;
+margin-bottom: 70%;
 margin-left: 45%;
+padding: 2%;
 }
 
 .photos {
@@ -276,20 +275,20 @@ max-width: 100%;
 }
 
 .photos img{
-width: 55%;
-margin-top: -75%;
+width: 65%;
+margin-top: -100%;
 margin-bottom: 30%;
-margin-left: -45%;
+margin-left: -75%;
 }
 
 .bluenar {
 max-width: 100%;
-transform: rotate(15deg);
+transform: rotate(20deg);
 }
 
 .bluenar img{
-width: 65%;
-margin-top: -105%;
+width: 75%;
+margin-top: -85%;
 margin-bottom: 100%;
 margin-left: 25%;
 }
@@ -299,9 +298,9 @@ max-width: 100%;
 }
 
 .lesmiss img{
-width: 80%;
+width: 100%;
 margin-top: -100%;
-margin-bottom: 70%;
+margin-bottom: 80%;
 margin-left: 25%;
 }
 
