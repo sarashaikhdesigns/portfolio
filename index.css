@@ -67,25 +67,6 @@ p {
 }
 
 
-/* designer */
-
-.designer-note {
-  font-family: monospace;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 15px;
-}
-
-.designer-note a {
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-  margin-right: 10px;
-  font-size: 12px;
-  font-style: italic;
-}
-
 
 
 
@@ -120,7 +101,7 @@ p {
 .copyright {
   font-family: monospace;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   padding: 15px;
 }
