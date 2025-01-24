@@ -360,7 +360,7 @@ margin-left: 50%;
   .nav a, 
   .bottom-nav a, 
   .copyright a {
-    font-size: 10px; /* Adjust font size for smaller screens */
+    font-size: 8px; /* Adjust font size for smaller screens */
   }
 }
 

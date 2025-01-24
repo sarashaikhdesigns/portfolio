@@ -245,8 +245,6 @@ img{
     margin: 0 auto;
     text-align: center;
   }
-  
-
 
 
 .title h1{
@@ -258,17 +256,11 @@ font-size: 5vw;
   font-size: 20px;
 }
 
-.nav a {
-  font-size: 10px;
-}
-
-.bottom-nav a {
-  font-size: 10px;
-}
+.nav a, 
+.bottom-nav a, 
 .copyright a {
-  font-size: 10px;
+  font-size: 8px; /* Adjust font size for smaller screens */
 }
-
 
   }
 
