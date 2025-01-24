@@ -223,55 +223,44 @@ p1 {
 }
 
 
-
-@media only screen and (max-width: 367px) {
-
+@media only screen and (max-width: 430px) {
   .intro {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr; /* Makes everything stack in one column */
     gap: 20px;
-    width: 100%; 
-    margin-left: 7%;
-    }
-  
+    width: 100%;
+  }
+
   .photo {
-    width: 150%;
-    margin-left: 10%;
-    display: grid;
-    grid-template-rows: auto; 
+    width: 100%; /* Adjust photo width to fit smaller screens */
+    margin-left: 0; /* Remove margin to ensure it fits */
+    display: block; /* Change to block for better stacking */
   }
-  
-  .photo img{
-    width: 200%;
+
+  .photo img {
+    width: 100%; /* Ensure image scales correctly */
   }
-  
+
   .contact {
-    margin-left: -1%;
-    text-align: right;
+    text-align: center; /* Center the contact info */
+    margin-left: 0; /* Remove margin */
   }
-  
+
   .text {
-    grid-column: span 2;
-    padding: 10px;
-    margin-left: 3%;
-    width: 80%;
-  }
-  
-
-  .title h1{
-    padding-top: 10%;
-    font-size: 5vw;
-    }
-
-  .nav a {
-    font-size: 10px;
+    width: 100%; /* Make text section full-width */
+    margin-left: 0; /* Remove margin */
+    padding: 10px; /* Add padding for better readability */
   }
 
-  .bottom-nav a {
-    font-size: 10px;
+  .title h1 {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    padding-top: 5%; /* Less padding on smaller screens */
   }
+
+  .nav a, 
+  .bottom-nav a, 
   .copyright a {
-    font-size: 10px;
+    font-size: 8px; /* Adjust font size for smaller screens */
   }
-  
-}
+
+  }
