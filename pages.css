@@ -226,6 +226,14 @@ img{
   object-fit: cover; /* Ensures uniformity in photo display */
 }
 
+.wildcard img {
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.wildcard img:hover {
+  filter: drop-shadow(0 0 10px white); /* Glow effect */
+}
+
 
 
 /* phone media queries */
