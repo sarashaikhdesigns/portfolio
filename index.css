@@ -215,7 +215,7 @@ transform: rotate(5deg);
 .riot-grrrl img{
 width: 45%;
 margin-left: -60%;
-margin-top: -5%;
+margin-top: -15%;
 }
 
 .fmn {
@@ -258,8 +258,8 @@ max-width: 100%;
 .photos img{
 width: 65%;
 margin-top: -100%;
-margin-bottom: 0%;
-margin-left: -75%;
+margin-bottom: 20%;
+margin-left: -55%;
 }
 
 .bluenar {
@@ -270,8 +270,7 @@ transform: rotate(20deg);
 .bluenar img{
 width: 75%;
 margin-top: -75%;
-margin-bottom: 100%;
-margin-left: 25%;
+margin-left: 45%;
 }
 
 
@@ -282,8 +281,8 @@ transform: rotate(15deg);
 
 .heartrot img{
 width: 75%;
-margin-top: -80%;
-margin-left: -100%;
+margin-top: -0%;
+margin-left: -10%;
 }
 
 .fine-arts {
