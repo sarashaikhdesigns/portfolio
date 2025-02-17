@@ -31,7 +31,10 @@ body
   filter: drop-shadow(0 0 10px white);
 }
 
-
+#location-link,
+.bullet {
+  display: inline;
+}
 
 
 
@@ -260,7 +263,13 @@ p1 {
   .nav a, 
   .bottom-nav a, 
   .copyright a {
-    font-size: 8px; /* Adjust font size for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
+
+  #location-link,
+  #first-bullet{
+    display: none;
+  }
+
 
   }
