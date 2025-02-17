@@ -6,6 +6,13 @@ body
 
 }
 
+p {
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+
 /* sara, NYC, email */
 .nav {
   font-family: monospace;
@@ -31,12 +38,57 @@ body
   filter: drop-shadow(0 0 10px white);
 }
 
+
 #location-link,
 .bullet {
   display: inline;
 }
 
 
+
+/* about, resume */
+
+.bottom-nav {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.bottom-nav a:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+
+
+
+/* copyright */
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
 
 .title{
   font-family: monospace;
@@ -263,7 +315,7 @@ p1 {
   .nav a, 
   .bottom-nav a, 
   .copyright a {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
 
   #location-link,
