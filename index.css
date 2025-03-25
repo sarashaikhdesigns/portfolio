@@ -173,133 +173,126 @@ img{
 
 /* general art */
 
-.polaris {
-max-width: 100%;
-transform: rotate(-5deg);
+.pttr {
+  max-width: 100%;
 }
 
-.polaris img{
-margin-top: -50%;
-margin-left: 55%;
-width: 60%;
-}
-
-
-
-.homebody{
-max-width: 100%;
-transform: rotate(-10deg);
-}
-
-.homebody img{
-margin-top: -25%;
-margin-bottom: 10%;
-margin-left: -70%;
-width: 80%;
-}
-
-
-
-.wildcard{
-max-width: 100%;
-}
-
-.wildcard img{
-padding: 5%;
-margin-top: -5%;
-margin-left: -5%;
-width: 80%;
-}
-
-.riot-grrrl {
-max-width: 100%;
-transform: rotate(5deg);
-}
-
-.riot-grrrl img{
-width: 45%;
-margin-left: -60%;
-margin-top: -15%;
+.pttr img {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: -65%;
 }
 
 .fmn {
-max-width: 100%;
+  max-width: 100%;
 }
 
-.fmn img{
-width: 70%;
-margin-left: 50%;
-margin-top: -60%;
-margin-bottom: 5%;
+.fmn img {
+  width: 90%;
+  margin-left: 50%;
+  margin-top: -60%;
 }
 
-.pttr {
-max-width: 100%;
+.wildcard {
+  max-width: 100%;
 }
 
-.pttr img{
-width: 90%;
-margin-top: 5%;
-margin-left: -65%;
+.wildcard img {
+  padding: 5%;
+  margin-top: -5%;
+  margin-left: -5%;
+  width: 80%;
 }
 
 .zineify {
-max-width: 100%;
+  max-width: 100%;
 }
 
-.zineify img{
-width: 85%;
-margin-top: -50%;
-margin-bottom: 60%;
-margin-left: 45%;
-padding: 2%;
+.zineify img {
+  margin-top: -5%;
+  margin-left: -70%;
+  width: 50%;
 }
+
+.second-skin {
+  max-width: 100%;
+}
+
+.second-skin img {
+  margin-top: -105%;
+  margin-left: 50%;
+  width: 70%;
+}
+
+.polaris {
+  max-width: 100%;
+  transform: rotate(5deg);
+}
+
+.polaris img {
+  width: 75%;
+  margin-left: -60%;
+  margin-top: -5%;
+}
+
+.homebody {
+  max-width: 100%;
+  transform: rotate(-10deg);
+}
+
+.homebody img {
+  width: 95%;
+  margin-top: -100%;
+  margin-left: 65%;
+  padding: 2%;
+}
+
 
 .photos {
-max-width: 100%;
+  max-width: 100%;
 }
 
-.photos img{
-width: 65%;
-margin-top: -100%;
-margin-bottom: 20%;
-margin-left: -55%;
+.photos img {
+  width: 75%;
+  margin-top: 5%;
+  margin-left: -65%;
+}
+
+
+
+.riot-grrrl {
+  max-width: 100%;
+  transform: rotate(-5deg);
+}
+
+.riot-grrrl img {
+  margin-top: -20%;
+  margin-left: 75%;
+  width: 50%;
 }
 
 .bluenar {
-max-width: 100%;
-transform: rotate(20deg);
+  max-width: 100%;
+  transform: rotate(20deg);
 }
 
-.bluenar img{
-width: 75%;
-margin-top: -75%;
-margin-left: 45%;
+.bluenar img {
+  width: 95%;
+  margin-top: -35%;
+  margin-left: -75%;
 }
-
 
 .heartrot {
-max-width: 100%;
-transform: rotate(15deg);
+  max-width: 100%;
+  transform: rotate(15deg);
 }
 
-.heartrot img{
-width: 75%;
-margin-top: -0%;
-margin-left: -10%;
+.heartrot img {
+  width: 95%;
+  margin-top: -40%;
+  margin-left: 40%;
 }
 
-.fine-arts {
-max-width: 100%;
-}
-
-.fine-arts img{
-padding: 2%;
-width: 60%;
-margin-top: -90%;
-margin-bottom: 20%;
-margin-left: 50%;
-}
 
 
 
@@ -315,8 +308,9 @@ margin-left: 50%;
 .zineify img,
 .photos img,
 .fine-arts img,
-.lesmiss img
-.bluenar img {
+.lesmiss img,
+.bluenar img,
+.second-skin img{
   transition: filter 0.3s ease-in-out;
 }
 
@@ -333,7 +327,8 @@ margin-left: 50%;
 .photos img:hover,
 .fine-arts img:hover,
 .lesmiss img:hover, 
-.bluenar img:hover {
+.bluenar img:hover,
+.second-skin img:hover {
   filter: drop-shadow(0 0 10px white);
 }
 
