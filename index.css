@@ -173,24 +173,31 @@ img{
 
 /* general art */
 
+.RGB{
+  width: 70%;          /* or whatever size you want */
+  margin-left: 65%;
+  margin-top: 15%;
+}
+
+.RGB video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.RGB img{
+  width: 100%;
+
+}
+
 .pttr {
   max-width: 100%;
 }
 
 .pttr img {
   width: 100%;
-  margin-top: 5%;
-  margin-left: -65%;
-}
-
-.fmn {
-  max-width: 100%;
-}
-
-.fmn img {
-  width: 90%;
-  margin-left: 50%;
   margin-top: -60%;
+  margin-left: -75%;
 }
 
 .wildcard {
@@ -199,19 +206,52 @@ img{
 
 .wildcard img {
   padding: 5%;
-  margin-top: -5%;
-  margin-left: -5%;
+  margin-top: -35%;
+  margin-left: 55%;
   width: 80%;
 }
+
+.fmn {
+  max-width: 100%;
+}
+
+.fmn img {
+  width: 100%;
+  margin-left: -70%;
+  margin-top: -15%;
+}
+
 
 .zineify {
   max-width: 100%;
 }
 
 .zineify img {
-  margin-top: -5%;
-  margin-left: -70%;
+  margin-top: -50%;
+  margin-left: 70%;
   width: 50%;
+}
+
+.geoffrey-mac {
+  max-width: 100%;
+}
+
+.geoffrey-mac img {
+  width: 100%;
+  margin-left: -70%;
+  margin-top: 10%;
+}
+
+.bornrich-diecool {
+  max-width: 100%;
+}
+
+.bornrich-diecool img {
+  width: 100%;
+  margin-left: -50%;
+  margin-top: -35%;
+ transform: rotate(5deg);
+
 }
 
 .second-skin {
@@ -219,31 +259,31 @@ img{
 }
 
 .second-skin img {
-  margin-top: -105%;
-  margin-left: 50%;
-  width: 70%;
+  margin-top: -75%;
+  margin-left: 65%;
+  width: 80%;
 }
 
 .polaris {
   max-width: 100%;
-  transform: rotate(5deg);
+  transform: rotate(-10deg);
 }
 
 .polaris img {
   width: 75%;
   margin-left: -60%;
-  margin-top: -5%;
+  margin-top: -25%;
 }
 
 .homebody {
   max-width: 100%;
-  transform: rotate(-10deg);
+  transform: rotate(10deg);
 }
 
 .homebody img {
-  width: 95%;
+  width: 100%;
   margin-top: -100%;
-  margin-left: 65%;
+  margin-left: 45%;
   padding: 2%;
 }
 
@@ -254,10 +294,9 @@ img{
 
 .photos img {
   width: 75%;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: -65%;
 }
-
 
 
 .riot-grrrl {
@@ -278,7 +317,7 @@ img{
 
 .bluenar img {
   width: 95%;
-  margin-top: -35%;
+  margin-top: -25%;
   margin-left: -75%;
 }
 
@@ -289,7 +328,7 @@ img{
 
 .heartrot img {
   width: 95%;
-  margin-top: -40%;
+  margin-top: -50%;
   margin-left: 40%;
 }
 
@@ -310,7 +349,11 @@ img{
 .fine-arts img,
 .lesmiss img,
 .bluenar img,
-.second-skin img{
+.second-skin img,
+.RGB video, 
+.RGB img,
+.bornrich-diecool img,
+.geoffrey-mac img{
   transition: filter 0.3s ease-in-out;
 }
 
@@ -328,7 +371,11 @@ img{
 .fine-arts img:hover,
 .lesmiss img:hover, 
 .bluenar img:hover,
-.second-skin img:hover {
+.second-skin img:hover,
+.RGB video:hover, 
+.RGB img:hover,
+.bornrich-diecool img:hover,
+.geoffrey-mac img:hover{
   filter: drop-shadow(0 0 10px white);
 }
 
@@ -353,6 +400,16 @@ img{
   .works img {
     width: 100%; /* Ensure images take full width of the column */
     margin: 0 auto; /* Center align images */
+  }
+
+  .RGB {
+    max-width: 100%; /* Ensure images take full width of the column */
+    margin: 0 auto; /* Center align images */
+  }
+
+    .RGB video{
+    width: 100%; /* Ensure images take full width of the column */
+    margin-top: 20%;
   }
 
   .nav a, 
