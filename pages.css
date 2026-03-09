@@ -237,6 +237,16 @@ img{
   filter: drop-shadow(0 0 10px white); /* Glow effect */
 }
 
+.RGB img {
+  max-width: 100%;
+}
+.RGB img {
+  max-width: 100%;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
 .snake {
   position: relative;
   width: 50vw; /* Set width as 50% of the viewport width */
