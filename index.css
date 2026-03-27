@@ -400,6 +400,7 @@ img{
   .works img {
     width: 100%; /* Ensure images take full width of the column */
     margin: 0 auto; /* Center align images */
+    margin-top: 10%;
   }
 
   .RGB {
