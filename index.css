@@ -174,7 +174,7 @@ img{
 /* general art */
 
 .RGB{
-  width: 70%;          /* or whatever size you want */
+  width: 70%;         
   margin-left: 65%;
   margin-top: 15%;
 }
@@ -189,6 +189,7 @@ img{
   width: 100%;
 
 }
+
 
 .pttr {
   max-width: 100%;

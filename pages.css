@@ -307,7 +307,36 @@ img{
   text-align: left;
 }
 
- 
+
+
+.RGB {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centers the wrapper */
+}
+
+.RGB-image-wrapper {
+  position: relative;
+  width: 500px; /* adjust as needed */
+  max-width: 100%;
+}
+
+.RGB-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.RGB-hover-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.RGB-image-wrapper:hover .RGB-hover-img {
+  opacity: 1;
+}
 /* phone media queries */
 
 
