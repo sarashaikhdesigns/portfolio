@@ -73,6 +73,39 @@ p {
 }
 
 
+.name-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* floating bio (does NOT affect layout) */
+.name-bio {
+  position: absolute;
+  top: 100%;        /* directly below the name */
+  left: 10%;
+  width: 500px;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  margin-top: 15px;
+  text-align: left; /* key fix */
+
+}
+
+/* text styling */
+.name-bio p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+    text-align: left; /* key fix */
+
+}
+
+/* fade in only */
+.name-wrapper:hover .name-bio {
+  opacity: 1;
+}
 
 /* about, resume */
 
