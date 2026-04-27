@@ -226,6 +226,8 @@ img{
 
 .pttr {
   max-width: 100%;
+    margin-top: 50%;
+
 }
 
 .pttr img {
@@ -240,9 +242,9 @@ img{
 
 .wildcard img {
   padding: 5%;
-  margin-top: -35%;
-  margin-left: 55%;
-  width: 80%;
+  margin-top: -75%;
+  margin-left: -85%;
+  width: 100%;
 }
 
 .fmn {
@@ -251,8 +253,8 @@ img{
 
 .fmn img {
   width: 100%;
-  margin-left: -70%;
-  margin-top: -15%;
+  margin-left: -90%;
+  margin-top: -45%;
 }
 
 
@@ -261,7 +263,7 @@ img{
 }
 
 .zineify img {
-  margin-top: -50%;
+  margin-top: -20%;
   margin-left: 70%;
   width: 50%;
 }
@@ -272,7 +274,7 @@ img{
 
 .geoffrey-mac img {
   width: 100%;
-  margin-left: -70%;
+  margin-left: 50%;
   margin-top: 10%;
 }
 
@@ -282,8 +284,8 @@ img{
 
 .bornrich-diecool img {
   width: 100%;
-  margin-left: -50%;
-  margin-top: -35%;
+  margin-left: 50%;
+  margin-top: -75%;
  transform: rotate(5deg);
 
 }
@@ -294,7 +296,7 @@ img{
 
 .second-skin img {
   margin-top: -75%;
-  margin-left: 65%;
+  margin-left: -65%;
   width: 80%;
 }
 
@@ -306,7 +308,7 @@ img{
 .polaris img {
   width: 75%;
   margin-left: -60%;
-  margin-top: -25%;
+  margin-top: -65%;
 }
 
 .homebody {
@@ -316,7 +318,7 @@ img{
 
 .homebody img {
   width: 100%;
-  margin-top: -100%;
+  margin-top: -60%;
   margin-left: 45%;
   padding: 2%;
 }
@@ -328,7 +330,7 @@ img{
 
 .photos img {
   width: 75%;
-  margin-top: 15%;
+  margin-top: -25%;
   margin-left: -65%;
 }
 
@@ -339,7 +341,6 @@ img{
 }
 
 .riot-grrrl img {
-  margin-top: -20%;
   margin-left: 75%;
   width: 50%;
 }
@@ -351,8 +352,8 @@ img{
 
 .bluenar img {
   width: 95%;
-  margin-top: -25%;
-  margin-left: -75%;
+  margin-top: -35%;
+  margin-left: 35%;
 }
 
 .heartrot {
@@ -363,7 +364,7 @@ img{
 .heartrot img {
   width: 95%;
   margin-top: -50%;
-  margin-left: 40%;
+  margin-left: -90%;
 }
 
 
