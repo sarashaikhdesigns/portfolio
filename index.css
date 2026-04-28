@@ -226,13 +226,12 @@ img{
 
 .pttr {
   max-width: 100%;
-    margin-top: 50%;
 
 }
 
 .pttr img {
   width: 100%;
-  margin-top: -60%;
+  margin-top: -10%;
   margin-left: -75%;
 }
 
