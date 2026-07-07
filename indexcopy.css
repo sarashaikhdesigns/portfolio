@@ -1,0 +1,516 @@
+body
+{
+    background-color: black;
+    color: white; 
+    justify-content: center;
+    overflow-x: hidden;
+/* Whole website cursor */
+
+  cursor: url("images/star-cursor.cur"), auto;
+}
+
+
+p {
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* logo */
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  opacity: 0.2; /* 20% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 130%;
+  max-height: 130%;
+  opacity: 1; /* Make sure the image itself is fully opaque */
+}
+
+
+
+/* sara, NYC, email */
+.nav {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 3;
+}
+
+.nav a {
+  content: '\2022';
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.top-links:hover a {
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+#location-link,
+.bullet {
+  display: inline;
+}
+
+
+.name-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* floating bio (does NOT affect layout) */
+.name-bio {
+  position: absolute;
+  top: 100%;        /* directly below the name */
+  left: 10%;
+  width: 500px;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  margin-top: 15px;
+  text-align: left; /* key fix */
+
+}
+
+/* text styling */
+.name-bio p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+    text-align: left; /* key fix */
+
+}
+
+/* fade in only */
+.name-wrapper:hover .name-bio {
+  opacity: 1;
+}
+
+
+
+/* HAMBURGER MENU */
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: .3s;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: black;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 9998;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  filter: drop-shadow(0 0 8px white);
+}
+
+
+
+#menu-toggle:checked ~ .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* copyright */
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.roles-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background: transparent;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 45px;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-content span {
+  font-family:  monospace;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.marquee-content span:nth-child(even) {
+  font-size: 1.3rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.intro-points {
+  text-align: left;
+}
+
+.intro-points p {
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.intro-points a {
+  color: white;
+  text-decoration: underline;
+  transition: filter .3s ease;
+}
+
+.intro-points a:hover {
+  filter: drop-shadow(0 0 8px white);
+}
+
+/* works */
+
+.title{
+  font-family: monospace;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2vw;
+}
+
+.works {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: -1%;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 100px;
+  text-align: left;
+  margin-top: 0%;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+
+
+.heading{
+  margin: 1%;
+}
+.heading p {
+  font-family: monospace;
+  font-style: italic;
+}
+
+
+
+.caption {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+.caption p {
+  font-family: monospace;
+  width: 100%; 
+  font-size: 14px;
+}
+
+
+img{
+  width: 40%;
+}
+
+
+
+
+
+
+
+/* general art */
+
+.RGB{
+  width: 70%;         
+  margin-left: 65%;
+  margin-top: -65%;
+}
+
+.RGB video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.RGB img{
+  width: 100%;
+
+}
+
+
+.pttr {
+  max-width: 100%;
+
+}
+
+.pttr img {
+  width: 100%;
+  margin-top: -10%;
+  margin-left: 45%;
+}
+
+.wildcard {
+  max-width: 100%;
+}
+
+.wildcard img {
+  padding: 5%;
+  margin-top: 05%;
+  margin-left: -85%;
+  width: 100%;
+}
+
+.fmn {
+  max-width: 100%;
+}
+
+.fmn img {
+  width: 100%;
+  margin-left: -90%;
+  margin-top: -55%;
+}
+
+
+.zineify {
+  max-width: 100%;
+}
+
+.zineify img {
+  margin-top: -80%;
+  margin-left: -70%;
+  width: 50%;
+}
+
+.geoffrey-mac {
+  max-width: 100%;
+}
+
+.geoffrey-mac img {
+  width: 100%;
+  margin-left: 50%;
+  margin-top: 20%;
+}
+
+.bornrich-diecool {
+  max-width: 100%;
+}
+
+.bornrich-diecool img {
+  width: 100%;
+  margin-left: -95%;
+  margin-top: -75%;
+ transform: rotate(5deg);
+
+}
+
+
+
+.homebody {
+  max-width: 100%;
+  transform: rotate(10deg);
+}
+
+.homebody img {
+  width: 100%;
+  margin-top: -30%;
+  margin-left: 35%;
+  padding: 2%;
+}
+
+
+.pttr img,
+.polaris img,
+.homebody img,
+.riot-grrrl img,
+.wildcard img,
+.heartrot img,
+.fmn img,
+.zineify img,
+.photos img,
+.fine-arts img,
+.lesmiss img,
+.bluenar img,
+.second-skin img,
+.RGB video, 
+.RGB img,
+.bornrich-diecool img,
+.geoffrey-mac img{
+  transition: filter 0.3s ease-in-out;
+}
+
+
+
+.pttr img:hover,
+.polaris img:hover,
+.homebody img:hover,
+.riot-grrrl img:hover,
+.wildcard img:hover,
+.heartrot img:hover,
+.fmn img:hover,
+.zineify img:hover,
+.photos img:hover,
+.fine-arts img:hover,
+.lesmiss img:hover, 
+.bluenar img:hover,
+.second-skin img:hover,
+.RGB video:hover, 
+.RGB img:hover,
+.bornrich-diecool img:hover,
+.geoffrey-mac img:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+
+
+
+
+
+/* phone media queries */
+
+
+@media only screen and (max-width: 567px) {
+  .works {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Adds spacing between items */
+    width: 100%;
+    margin: 0 auto; /* Center align the grid */
+  }
+
+  .works img {
+    width: 100%; /* Ensure images take full width of the column */
+    margin: 0 auto; /* Center align images */
+    margin-top: 10%;
+  }
+
+  .RGB {
+    max-width: 100%; /* Ensure images take full width of the column */
+    margin: 0 auto; /* Center align images */
+  }
+
+    .RGB video{
+    width: 100%; /* Ensure images take full width of the column */
+    margin-top: 20%;
+  }
+
+  .nav a, 
+  .bottom-nav a, 
+  .copyright a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  #location-link,
+  #first-bullet{
+    display: none;
+  }
+
+}
+
+
+
