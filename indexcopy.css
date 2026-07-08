@@ -467,7 +467,39 @@ img{
 
 
 
+.image-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
 
+.image-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: imageScroll 25s linear infinite;
+}
+
+.image-track img {
+  width: 350px;      /* adjust size */
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.image-track img:hover {
+  transform: scale(1.03);
+}
+
+@keyframes imageScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 
 
