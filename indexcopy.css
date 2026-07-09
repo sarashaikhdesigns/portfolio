@@ -354,11 +354,33 @@ h2 {
 
 }
 
+.all-works-link {
+  width: 100%;
+  text-align: center;
+  margin-top: -2%;
 
+  font-family: monospace;
+  color: white;
+}
 
+.all-works-link span {
+  font-size: 18px;
+  margin-right: 10px;
+}
 
+.all-works-link a {
+  display: inline-block;
+  font-size: 36px; /* adjust as desired */
+  line-height: 1;
+  color: white;
+  text-decoration: none;
+  transition: filter 0.3s, transform 0.3s;
+}
 
-
+.all-works-link a:hover {
+  filter: drop-shadow(0 0 8px white);
+  transform: translateX(6px);
+}
 
 html {
   scroll-behavior: smooth;
