@@ -4,6 +4,7 @@ body
     color: white; 
     justify-content: center;
     overflow-x: hidden;
+
 }
 
 
@@ -13,36 +14,6 @@ p {
   text-align: center;
 }
 
-* {
-  cursor: none;
-}
-
-.cursor-star {
-  position: fixed;
-  pointer-events: none;
-  z-index: 999999;
-  color: white;
-  font-size: 20px; /* was 14px */
-  line-height: 1;
-  transform: translate(-50%, -50%);
-  text-shadow:
-    0 0 6px #fff,
-    0 0 12px rgba(255,255,255,.8);
-
-  animation: starTrail 1.2s cubic-bezier(.22,.61,.36,1) forwards;
-}
-
-@keyframes starTrail {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-}
 
 /* logo */
 
@@ -136,66 +107,30 @@ p {
   opacity: 1;
 }
 
+/* about, resume */
 
-
-/* HAMBURGER MENU */
-
-#menu-toggle {
-  display: none;
-}
-
-.hamburger {
+.bottom-nav {
+  font-family: monospace;
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 32px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
 }
 
-.hamburger span {
-  width: 100%;
-  height: 2px;
-  background: white;
-  transition: .3s;
-}
-
-.dropdown-menu {
-  position: fixed;
-  top: 60px;
-  right: 20px;
-  background: black;
-  padding: 15px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
-  z-index: 9998;
-}
-
-.dropdown-menu a {
+.bottom-nav a {
   color: white;
   text-decoration: none;
-  font-family: monospace;
+  padding: 5px;
+  margin-right: 10px;
   font-size: 16px;
 }
 
-.dropdown-menu a:hover {
-  filter: drop-shadow(0 0 8px white);
+.bottom-nav a:hover {
+  filter: drop-shadow(0 0 10px white);
 }
 
 
 
-#menu-toggle:checked ~ .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-}
 
 
 /* copyright */
@@ -216,97 +151,8 @@ p {
   font-size: 16px;
 }
 
-.roles-section {
-  width: 100%;
-  overflow: hidden;
-  padding: 40px 0;
-  background: transparent;
-}
-
-.heading {
-  margin-top: -10%;
-  margin-bottom: -20%; /* less space before marquee */
-}
-
-.name-link {
-  font-family: monospace;
-  font-style: italic;
-  text-transform: uppercase;
-  color: inherit;
-  text-decoration: none;
-  transition: filter 0.2s ease;
-}
-
-.erotica-letter {
-  font-family: "erotica-big", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 200px;
-}
-
-.name-link:hover {
-  filter: drop-shadow(0 0 8px white);
-}
 
 
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-
-}
-
-.marquee-content {
-  display: inline-flex;
-  align-items: center;
-  gap: 45px;
-  animation: marquee 18s linear infinite;
-  white-space: nowrap;
- 
-}
-
-.marquee-content span {
-  font-family:  monospace;
-  font-size: 2.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.marquee-content span:nth-child(even) {
-  font-size: 1.3rem;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.intro-points {
-  margin-top: -2%;
-  text-align: left;
-}
-
-.intro-points p {
-  font-family: monospace;
-  font-size: 18px;
-  color: white;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.intro-points a {
-  color: white;
-  text-decoration: underline;
-  transition: filter .3s ease;
-}
-
-.intro-points a:hover {
-  filter: drop-shadow(0 0 8px white);
-}
 
 /* works */
 
@@ -326,26 +172,26 @@ p {
 
 
 
-h1 {
+.heading{
+  margin: 1%;
+}
+.heading p {
   font-family: monospace;
-  font-size: 80px;
-  font-weight: 400;
-  text-align: left;
   font-style: italic;
 }
 
-h2 {
-  font-family: monospace;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 100;
-  text-transform: uppercase;
 
+
+.caption {
+  width: 70%; 
+  margin: 0 auto; 
 }
 
-
-
-
+.caption p {
+  font-family: monospace;
+  width: 100%; 
+  font-size: 14px;
+}
 
 
 img{
@@ -363,7 +209,7 @@ img{
 .RGB{
   width: 70%;         
   margin-left: 65%;
-  margin-top: -65%;
+  margin-top: 15%;
 }
 
 .RGB video{
@@ -386,7 +232,7 @@ img{
 .pttr img {
   width: 100%;
   margin-top: -10%;
-  margin-left: 45%;
+  margin-left: -75%;
 }
 
 .wildcard {
@@ -395,7 +241,7 @@ img{
 
 .wildcard img {
   padding: 5%;
-  margin-top: 05%;
+  margin-top: -75%;
   margin-left: -85%;
   width: 100%;
 }
@@ -407,7 +253,7 @@ img{
 .fmn img {
   width: 100%;
   margin-left: -90%;
-  margin-top: -55%;
+  margin-top: -45%;
 }
 
 
@@ -416,8 +262,8 @@ img{
 }
 
 .zineify img {
-  margin-top: -80%;
-  margin-left: -70%;
+  margin-top: -20%;
+  margin-left: 70%;
   width: 50%;
 }
 
@@ -428,7 +274,7 @@ img{
 .geoffrey-mac img {
   width: 100%;
   margin-left: 50%;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .bornrich-diecool {
@@ -437,13 +283,32 @@ img{
 
 .bornrich-diecool img {
   width: 100%;
-  margin-left: -95%;
+  margin-left: 50%;
   margin-top: -75%;
  transform: rotate(5deg);
 
 }
 
+.second-skin {
+  max-width: 100%;
+}
 
+.second-skin img {
+  margin-top: -75%;
+  margin-left: -65%;
+  width: 80%;
+}
+
+.polaris {
+  max-width: 100%;
+  transform: rotate(-10deg);
+}
+
+.polaris img {
+  width: 75%;
+  margin-left: -60%;
+  margin-top: -65%;
+}
 
 .homebody {
   max-width: 100%;
@@ -452,17 +317,73 @@ img{
 
 .homebody img {
   width: 100%;
-  margin-top: -30%;
-  margin-left: 35%;
+  margin-top: -60%;
+  margin-left: 45%;
   padding: 2%;
 }
 
 
+.photos {
+  max-width: 100%;
+}
+
+.photos img {
+  width: 75%;
+  margin-top: -25%;
+  margin-left: -65%;
+}
+
+
+.riot-grrrl {
+  max-width: 100%;
+  transform: rotate(-5deg);
+}
+
+.riot-grrrl img {
+  margin-left: 75%;
+  width: 50%;
+}
+
+.bluenar {
+  max-width: 100%;
+  transform: rotate(20deg);
+}
+
+.bluenar img {
+  width: 95%;
+  margin-top: -35%;
+  margin-left: 35%;
+}
+
+.heartrot {
+  max-width: 100%;
+  transform: rotate(15deg);
+}
+
+.heartrot img {
+  width: 95%;
+  margin-top: -50%;
+  margin-left: -90%;
+}
+
+
+
+
+
+
 .pttr img,
+.polaris img,
 .homebody img,
+.riot-grrrl img,
 .wildcard img,
+.heartrot img,
 .fmn img,
 .zineify img,
+.photos img,
+.fine-arts img,
+.lesmiss img,
+.bluenar img,
+.second-skin img,
 .RGB video, 
 .RGB img,
 .bornrich-diecool img,
@@ -473,11 +394,18 @@ img{
 
 
 .pttr img:hover,
+.polaris img:hover,
 .homebody img:hover,
 .riot-grrrl img:hover,
 .wildcard img:hover,
+.heartrot img:hover,
 .fmn img:hover,
 .zineify img:hover,
+.photos img:hover,
+.fine-arts img:hover,
+.lesmiss img:hover, 
+.bluenar img:hover,
+.second-skin img:hover,
 .RGB video:hover, 
 .RGB img:hover,
 .bornrich-diecool img:hover,
@@ -487,36 +415,7 @@ img{
 
 
 
-.image-marquee {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  overflow: hidden;
-  padding: 40px 0;
-}
 
-.image-track {
-  display: flex;
-  gap: 10px;
-  width: max-content;
-  animation: imageScroll 25s linear infinite;
-}
-
-.image-track img {
-  width: 350px;      /* adjust size */
-  height: auto;
-  flex-shrink: 0;
-  object-fit: cover;
-  transition: transform .3s ease;
-}
-
-@keyframes imageScroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 
 

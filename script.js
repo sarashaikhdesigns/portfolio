@@ -1,32 +1,47 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var menuButton = document.querySelector('.hamburger-menu');
-  var menu = document.querySelector('.menu');
+window.addEventListener("DOMContentLoaded", () => {
 
-  menuButton.addEventListener('click', function () {
-      menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'flex' : 'none';
-  });
+    let lastX = 0;
+    let lastY = 0;
 
-  function showSlides(slideClass, interval) {
-      let slides = document.getElementsByClassName(slideClass);
-      let slideIndex = 0;
+    document.addEventListener("mousemove", (e) => {
 
-      function displayNextSlide() {
-          for (let i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-              slideIndex = 1;
-          }
-          slides[slideIndex - 1].style.display = "block";
-          setTimeout(displayNextSlide, interval); // Change image at specified interval
-      }
+        const distance = Math.hypot(
+            e.clientX - lastX,
+            e.clientY - lastY
+        );
 
-      displayNextSlide();
-  }
+        // Create stars more frequently for a smoother trail
+        if (distance < 10) return;
 
-  showSlides("typeSlides", 2000);    
-  showSlides("fashionSlides", 1500); 
-  showSlides("photoSlides", 1000);  
-  showSlides("artSlides", 1500);     
+        lastX = e.clientX;
+        lastY = e.clientY;
+
+        // Create 3 stars every movement
+        for (let i = 0; i < 1; i++) {
+
+            const star = document.createElement("div");
+            star.className = "cursor-star";
+            star.innerHTML = "★";
+
+            // Keep stars close together
+            const spread = 40;
+
+            star.style.left =
+                e.clientX + (Math.random() - 0.5) * spread + "px";
+
+            star.style.top =
+                e.clientY + (Math.random() - 0.5) * spread + "px";
+
+            // Slightly larger stars
+            star.style.fontSize =
+                (20 + Math.random() * 5) + "px";
+
+            document.body.appendChild(star);
+
+            setTimeout(() => {
+                star.remove();
+            }, 1200);
+        }
+    });
+
 });
