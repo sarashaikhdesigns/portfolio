@@ -10,20 +10,17 @@ window.addEventListener("DOMContentLoaded", () => {
             e.clientY - lastY
         );
 
-        // Create stars more frequently for a smoother trail
         if (distance < 10) return;
 
         lastX = e.clientX;
         lastY = e.clientY;
 
-        // Create 3 stars every movement
         for (let i = 0; i < 1; i++) {
 
             const star = document.createElement("div");
             star.className = "cursor-star";
             star.innerHTML = "★";
 
-            // Keep stars close together
             const spread = 40;
 
             star.style.left =
@@ -32,7 +29,6 @@ window.addEventListener("DOMContentLoaded", () => {
             star.style.top =
                 e.clientY + (Math.random() - 0.5) * spread + "px";
 
-            // Slightly larger stars
             star.style.fontSize =
                 (20 + Math.random() * 5) + "px";
 
@@ -43,5 +39,24 @@ window.addEventListener("DOMContentLoaded", () => {
             }, 1200);
         }
     });
+
+    // Arrow toggle
+const arrow = document.querySelector(".scroll-arrow");
+const works = document.querySelector("#selected-works");
+
+function updateArrow() {
+    const selectedWorksY = works.offsetTop;
+
+    if (window.scrollY >= selectedWorksY - 200) {
+        arrow.textContent = "↑";
+        arrow.href = "#top";
+    } else {
+        arrow.textContent = "↓";
+        arrow.href = "#selected-works";
+    }
+}
+
+window.addEventListener("scroll", updateArrow);
+updateArrow();
 
 });

@@ -351,17 +351,15 @@ h2 {
 
 
 
-
 html {
   scroll-behavior: smooth;
 }
 
-.down-arrow {
+.scroll-arrow {
   position: fixed;
   bottom: 45px;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 99999;
 
   color: white;
   text-decoration: none;
@@ -372,7 +370,7 @@ html {
   transition: filter 0.3s ease;
 }
 
-.down-arrow:hover {
+.scroll-arrow:hover {
   filter: drop-shadow(0 0 10px white);
 }
 
