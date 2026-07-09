@@ -190,7 +190,16 @@ p {
   filter: drop-shadow(0 0 8px white);
 }
 
+.wildcard-logo img {
+  height: 24px;   /* adjust as needed */
+  width: auto;
+  display: block;
+  transition: filter 0.3s;
+}
 
+.wildcard-logo:hover img {
+  filter: drop-shadow(0 0 8px white);
+}
 
 #menu-toggle:checked ~ .dropdown-menu {
   opacity: 1;
