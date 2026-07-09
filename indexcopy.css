@@ -545,13 +545,10 @@ html {
 
 .image-marquee h2 a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   transition: filter 0.3s ease;
 }
 
-.image-marquee h2 a:hover {
-  filter: drop-shadow(0 0 8px white);
-}
 
 .image-track {
   display: flex;
@@ -568,9 +565,7 @@ html {
   transition: transform .3s ease;
 }
 
-.image-track img:hover {
-  filter: drop-shadow(0 0 10px white);
-}
+
 
 @keyframes imageScroll {
   from {
