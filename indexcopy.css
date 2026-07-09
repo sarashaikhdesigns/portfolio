@@ -224,7 +224,7 @@ p {
 }
 
 .heading {
-  margin-top: -10%;
+  margin-top: -13%;
   margin-bottom: -20%; /* less space before marquee */
 }
 
@@ -287,6 +287,7 @@ p {
 
 .intro-points {
   margin-top: -2%;
+  margin-bottom: -5%;
   text-align: left;
 }
 
@@ -322,6 +323,7 @@ p {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 2%;
+  margin-top: 10%;
 }
 
 
@@ -348,11 +350,6 @@ h2 {
 
 
 
-img{
-  width: 40%;
-}
-
-
 
 
 
@@ -361,33 +358,15 @@ img{
 /* general art */
 
 .RGB{
-  width: 70%;         
+  width: 50%;         
   margin-left: 65%;
-  margin-top: -65%;
-}
-
-.RGB video{
-  width: 100%;
-  height: auto;
-  display: block;
+  margin-top: -50%;
 }
 
 .RGB img{
   width: 100%;
-
 }
 
-
-.pttr {
-  max-width: 100%;
-
-}
-
-.pttr img {
-  width: 100%;
-  margin-top: -10%;
-  margin-left: 45%;
-}
 
 .wildcard {
   max-width: 100%;
@@ -395,19 +374,9 @@ img{
 
 .wildcard img {
   padding: 5%;
-  margin-top: 05%;
-  margin-left: -85%;
-  width: 100%;
-}
-
-.fmn {
-  max-width: 100%;
-}
-
-.fmn img {
-  width: 100%;
-  margin-left: -90%;
-  margin-top: -55%;
+  margin-top: -5%;
+  margin-left: -75%;
+  width: 80%;
 }
 
 
@@ -416,9 +385,9 @@ img{
 }
 
 .zineify img {
-  margin-top: -80%;
-  margin-left: -70%;
-  width: 50%;
+  margin-top: -50%;
+  margin-left: -10%;
+  width: 40%;
 }
 
 .geoffrey-mac {
@@ -426,9 +395,9 @@ img{
 }
 
 .geoffrey-mac img {
-  width: 100%;
-  margin-left: 50%;
-  margin-top: 20%;
+  width: 80%;
+  margin-left: 65%;
+  margin-top: 10%;
 }
 
 .bornrich-diecool {
@@ -436,13 +405,32 @@ img{
 }
 
 .bornrich-diecool img {
-  width: 100%;
-  margin-left: -95%;
-  margin-top: -75%;
- transform: rotate(5deg);
+  width: 80%;
+  margin-left: -115%;
+  margin-top: -120%;
+  transform: rotate(25deg);
 
 }
 
+.pttr {
+  max-width: 100%;
+}
+
+.pttr img {
+  width: 80%;
+  margin-top: -70%;
+  margin-left: -120%;
+}
+
+.fmn {
+  max-width: 100%;
+}
+
+.fmn img {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: -25%;
+}
 
 
 .homebody {
@@ -451,9 +439,9 @@ img{
 }
 
 .homebody img {
-  width: 100%;
+  width: 75%;
   margin-top: -30%;
-  margin-left: 35%;
+  margin-left: 75%;
   padding: 2%;
 }
 
@@ -494,6 +482,16 @@ img{
   padding: 40px 0;
 }
 
+.image-marquee h2 a {
+  color: white;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.image-marquee h2 a:hover {
+  filter: drop-shadow(0 0 8px white);
+}
+
 .image-track {
   display: flex;
   gap: 10px;
@@ -502,19 +500,23 @@ img{
 }
 
 .image-track img {
-  width: 350px;      /* adjust size */
+  width: 350px;
   height: auto;
   flex-shrink: 0;
   object-fit: cover;
   transition: transform .3s ease;
 }
 
+.image-track img:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
 @keyframes imageScroll {
   from {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
