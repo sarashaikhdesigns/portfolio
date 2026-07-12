@@ -92,7 +92,9 @@ p {
 }
 
 .top-links:hover a {
-  filter: drop-shadow(0 0 10px white);
+filter:
+  drop-shadow(0 0 20px #fff)
+  drop-shadow(0 0 40px #fff)
 }
 
 
@@ -234,7 +236,17 @@ p {
 
 .heading {
   margin-top: -13%;
-  margin-bottom: -20%; /* less space before marquee */
+  margin-bottom: -20%;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.heading h1 {
+  font-family: monospace;
+  font-size: clamp(28px, 7vw, 80px);
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
 }
 
 .name-link {
@@ -249,8 +261,8 @@ p {
 .erotica-letter {
   font-family: "erotica-big", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 200px;
+  font-weight: 400;
+  font-size: 2.5em; /* instead of 200px */
 }
 
 .name-link:hover {
@@ -605,6 +617,14 @@ html {
     width: 100%; /* Ensure images take full width of the column */
     margin-top: 20%;
   }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .marquee-content span {
+  font-size: 1.7rem;
+}
 
   .nav a, 
   .bottom-nav a, 
