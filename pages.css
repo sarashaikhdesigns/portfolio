@@ -79,28 +79,75 @@ a{
 
 
 
-/* about, resume */
+/* toggle */
 
-.bottom-nav {
-  font-family: monospace;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 15px;
+/* HAMBURGER MENU */
+
+#menu-toggle {
+  display: none;
 }
 
-.bottom-nav a {
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: .3s;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: black;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 9998;
+}
+
+.dropdown-menu a {
   color: white;
   text-decoration: none;
-  padding: 5px;
-  margin-right: 10px;
+  font-family: monospace;
   font-size: 16px;
 }
 
-.bottom-nav a:hover {
-  filter: drop-shadow(0 0 10px white);
+.dropdown-menu a:hover {
+  filter: drop-shadow(0 0 8px white);
 }
 
+.wildcard-logo img {
+  height: 24px;   /* adjust as needed */
+  width: auto;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.wildcard-logo:hover img {
+  filter: drop-shadow(0 0 8px white);
+}
+
+#menu-toggle:checked ~ .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
