@@ -238,10 +238,9 @@ p {
   display: block;
   opacity: 0;
 
-  transition:
-    opacity 0.5s ease,
-    filter 0.2s ease,
-    transform 0.2s ease;
+transition:
+  filter 0.2s ease,
+  transform 0.2s ease;
 }
 
 .work-card .is-active {

@@ -22,15 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (slide.tagName === "VIDEO") {
         slide.play().catch(() => {});
       }
+
+      // Images: 0.5 sec, Videos: 3 sec
+      const duration = slide.tagName === "VIDEO" ? 3000 : 1000;
+
+      setTimeout(() => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      }, duration);
     }
 
     showSlide(current);
-
-    if (slides.length === 1) return;
-
-    setInterval(() => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }, 3000); // 3 seconds per slide
   });
 });
