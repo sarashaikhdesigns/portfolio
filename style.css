@@ -197,6 +197,10 @@ filter:
   font-size: 16px;
 }
 
+.intro-points .copyright a {
+  text-decoration: none;
+}
+
 .roles-section {
   width: 100%;
   overflow: hidden;
