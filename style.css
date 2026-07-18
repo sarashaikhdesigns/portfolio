@@ -13,36 +13,6 @@ p {
   text-align: center;
 }
 
-* {
-  cursor: none;
-}
-
-.cursor-star {
-  position: fixed;
-  pointer-events: none;
-  z-index: 999999;
-  color: white;
-  font-size: 20px; /* was 14px */
-  line-height: 1;
-  transform: translate(-50%, -50%);
-  text-shadow:
-    0 0 6px #fff,
-    0 0 12px rgba(255,255,255,.8);
-
-  animation: starTrail 1.2s cubic-bezier(.22,.61,.36,1) forwards;
-}
-
-@keyframes starTrail {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-}
 
 /* logo */
 
